@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+nav img {
+    width: 80px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #fff;
+    background-color: rgb(15, 163, 143);
+}
+
+nav a {
+    text-decoration: underline;
+    line-height: 75px;
+    color: green;
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#home .model {
+    width: 400px;
+    height: 450px;
+}
+
+.model img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#home .content {
+    width: 500px;
+    height: 200px;
+}
+
+.content h1 {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.content p {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.content a {
+    text-decoration: none;
+    color: azure;
+    background-color: rgb(15, 163, 143);
+    width: 120px;
+    height: 35px;
+    padding: 10px 27px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+
+.content a:hover {
+    background-color: #76deb6;
+}
+
+#skills {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#skills .skilltest {
+    width: 350px;
+    height: 450px;
+}
+
+.skilltest .sks {
+    color: rgb(15, 163, 143);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skilltest span {
+    font-size: 50px;
+    font-weight: 100px;
+}
+
+#skills .skilltest .info {
+    width: 100%;
+    height: 90px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skilltest .info i {
+    background-color: aliceblue;
+    padding: 14px 15px;
+    border-radius: 50%;
+}
+
+.skilltest .info div {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.info div h3 {
+    font-size: 0.8rem;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.fa-html5 {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.fa-css3-alt {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.fa-square-js {
+    color: orangered;
+}
+
+#skills .skillphoto {
+    width: 600px;
+    height: 300px;
+}
+
+.skillphoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#recent {
+    /*width: 100%;
+    height: 600px;
+    background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#recent .recenthead {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 800px;
+    height: 100px;
+}
+
+.recenthead span {
+    text-transform: uppercase;
+    color: rgb(15, 163, 143);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recenthead h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#recent a {
+    text-decoration: none;
+    background-color: rgb(15, 163, 143);
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+#recent a:hover {
+    background-color: #76deb6;
+}
+
+#client {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#client span {
+    color: rgb(15, 163, 143);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-weight: 100;
+}
+
+#client h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#client .clientcontainer {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientcontainer .clientbox {
+    width: 300px;
+    height: 350px;
+    background-color: transparent;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.33);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.clientbox:hover {
+    background-color: skyblue;
+    transform: translateY(-10px);
+}
+
+.clientcontainer .clientbox img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.clientbox .stars {
+    display: flex;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+.clientbox p {
+    font-size: 0.9rem;
+    text-align: center;
+    /*  margin: 0px 40px;*/
+    padding: 0px 40px;
+    /*width: 100%;
+  height: 70px;
+  overflow: hidden;*/
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.clientbox a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(15, 163, 143);
+    padding: 8px 14px;
+}
+
+#contact {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact img {
+    width: 450px;
+}
+
+#contact h1 {
+    margin: 15px 0px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#contact .inbox {
+    width: 310px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px grey;
+}
+
+.inbox input {
+    border: none;
+    text-align: center;
+}
+
+.inbox input:focus {
+    outline: none;
+}
+
+.inbox a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(15, 163, 143);
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
